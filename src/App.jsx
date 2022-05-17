@@ -56,11 +56,8 @@ function App() {
           >
             <Heading>Customers</Heading>
           </GridItem>
-          <CardItem></CardItem>
-          <CardItem></CardItem>
-          <CardItem></CardItem>
           {users.map((user) => {
-            return <CardItem>{user.name.first}</CardItem>;
+            return <CardItem data={user}></CardItem>;
           })}
         </SimpleGrid>
       </Box>
