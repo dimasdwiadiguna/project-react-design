@@ -6,23 +6,25 @@ export const CardItem = ({ data, children }) => {
   return (
     <GridItem
       bg="white"
-      colSpan={2}
+      colSpan={3}
       borderRadius="md"
       boxShadow="md"
       border="1px"
       borderColor="gray.100"
       h="100px"
-      p={4}
+      p={3}
     >
       <HStack height="full" gap={2}>
         <Box d="flex" height="full" alignItems="center" justifyContent="center">
           <Image boxSize="48px" src={picture.thumbnail} borderRadius="full" />
         </Box>
         <VStack alignItems="start">
-          <p>
+          <Text fontSize="sm" fontWeight="semibold">
             {name.first} {name.last}
-          </p>
-          <Text fontSize="xs">{location.country}</Text>
+          </Text>
+          <Text fontSize="xs" color="gray.500">
+            {location.country}
+          </Text>
         </VStack>
       </HStack>
     </GridItem>
