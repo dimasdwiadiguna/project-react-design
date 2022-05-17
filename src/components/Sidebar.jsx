@@ -26,7 +26,7 @@ export const Sidebar = () => {
 
   return (
     <Box
-      w="250px"
+      minW="250px"
       border="2px"
       h="100%"
       borderRight="1px"
